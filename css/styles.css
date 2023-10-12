@@ -32,7 +32,7 @@ header {
     z-index: 5;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -62%);
 }
 header > img {
     border-radius: 7px;
@@ -56,4 +56,16 @@ header > button:hover {
 header .material-symbols-outlined {
     font-size: 8rem;
     font-variation-settings: 'wght' 300;
+}
+.buttons {
+    position: absolute;
+    top: 85%;
+    width: 100%;
+}
+.buttons > button {
+    font-size: 38px;
+    clip-path: circle();
+}
+.buttons > button:hover {
+    background-color: rgba(108, 108, 108, 0.4);
 }
