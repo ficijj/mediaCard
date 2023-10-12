@@ -13,6 +13,7 @@ body {
 button {
     background: none;
     border: 0;
+    transition: var(--std);
 }
 button:hover {
     cursor: pointer;
@@ -32,7 +33,13 @@ header {
     z-index: 5;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -62%);
+    transform: translate(-50%, -50%);
+    transition: var(--std);
+}
+.card:hover header {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -64%);
 }
 header > img {
     border-radius: 7px;
@@ -59,7 +66,7 @@ header .material-symbols-outlined {
 }
 .buttons {
     position: absolute;
-    top: 85%;
+    top: 83%;
     width: 100%;
 }
 .buttons > button {
@@ -68,4 +75,8 @@ header .material-symbols-outlined {
 }
 .buttons > button:hover {
     background-color: rgba(108, 108, 108, 0.4);
+}
+#more {
+    position: absolute;
+    left: 86%;
 }
