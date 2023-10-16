@@ -88,8 +88,6 @@ footer {
 }
 .stats {
     color: var(--mid);
-    /* position: absolute;
-    top: 72%; */
 }
 .stats > span:not(:first-of-type), .tags > span:not(:first-of-type) {
     display: inline-block;
@@ -105,19 +103,12 @@ footer {
 }
 .tags {
     font-size: .9em;
-    /* position: absolute;
-    top: 83%; */
 }
 .tags > span:not(:last-of-type):after {
     content: "\2022";
     color: var(--mid);
     padding-left: 2rem;
 }
-/* .buttons {
-    position: absolute;
-    top: 79%;
-    left: 68%;
-} */
 .buttons > button {
     font-size: 42px;
     clip-path: circle();
