@@ -72,7 +72,10 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flexbox;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
     background-color: #464646;
     border-radius: 7px;
     padding: 12px;
@@ -85,8 +88,8 @@ footer {
 }
 .stats {
     color: var(--mid);
-    position: absolute;
-    top: 72%;
+    /* position: absolute;
+    top: 72%; */
 }
 .stats > span:not(:first-of-type), .tags > span:not(:first-of-type) {
     display: inline-block;
@@ -102,19 +105,19 @@ footer {
 }
 .tags {
     font-size: .9em;
-    position: absolute;
-    top: 83%;
+    /* position: absolute;
+    top: 83%; */
 }
 .tags > span:not(:last-of-type):after {
     content: "\2022";
     color: var(--mid);
     padding-left: 2rem;
 }
-.buttons {
+/* .buttons {
     position: absolute;
     top: 79%;
     left: 68%;
-}
+} */
 .buttons > button {
     font-size: 42px;
     clip-path: circle();
